@@ -6,13 +6,16 @@
     justify-content: space-between;
     padding: 0 140px 0;
 }
-.header a{
+.header div{
+    display: flex;
+}
+.header .nav-items{
     color: #fff;
     font-size: 17px;
     text-decoration: none;
     margin-left: 36px;
     transition: all 0.3s ease;
 }
-.header a:hover{
+.header .nav-items:hover{
     color: #FF9900;
 }
