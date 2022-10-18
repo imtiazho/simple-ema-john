@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+
+}
+.from-container{
+    width: 450px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+.form-title{
+    font-size: 35px;
+    font-weight: 400;
+    color: #2A414F;
+    margin: 0 0 1.5rem 0;
+}
+.input-group{
+    margin-bottom: 1rem;
+}
+.input-group label{
+    display: block;
+    margin: 0 0 5px 5px;
+    font-size: 16px;
+}
+.input-group input{
+    width: 100%;
+    border: 1px solid #95A0A7;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+.input-group input:focus{
+    border: 1px solid #FF9900;
+}
+.form-submit-btn{
+    width: 100%;
+    background-color: rgba(225, 153, 0, 0.3);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-link{
+    color: #FF9900;
+    text-decoration: none;
+}
+.form-link:hover{
+    text-decoration: underline;
+}
+.from-container p{
+    text-align: center;
+}
+.or-devider{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left-line{
+    width: 100%;
+    border: 0.5px solid #95A0A7;
+}
+.right-line{
+    width: 100%;
+    border: 0.5px solid #95A0A7;
+}
+.or-devider p{
+    font-size: 18px;
+}
+.google-btn{
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
