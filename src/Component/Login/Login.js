@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { FcGoogle } from 'react-icons/fc';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle, useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../../firebase.init';
 
 const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [
-        signInWithEmailAndPassword,
-        user,
-        loading,
-        error,
-      ] = useSignInWithEmailAndPassword(auth);
+    const [user] = useAuthState(auth);
+
+    const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
+
     const navigate = useNavigate()
     const location = useLocation()
     let from = location.state?.from?.pathname || "/";
@@ -61,7 +61,7 @@ const Login = () => {
                 <div className="right-line"></div>
             </div>
 
-            <button className='google-btn'><FcGoogle></FcGoogle> Sign With Google</button>
+            <button onClick={()=> signInWithGoogle} className='google-btn'><FcGoogle></FcGoogle> Sign With Google</button>
         </div>
     );
 };

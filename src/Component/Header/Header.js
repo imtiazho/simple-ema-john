@@ -20,7 +20,7 @@ const Header = () => {
                 <CustomLink className='nav-items' to="/shop">Shop</CustomLink>
                 <CustomLink className='nav-items' to="/orders">Orders</CustomLink>
                 <CustomLink className='nav-items' to="/inventory">Inventory</CustomLink>
-                <CustomLink className='nav-items' to="/about">About</CustomLink>
+                <CustomLink className='nav-items' to="/addProduct">Add Product</CustomLink>
                 {user ?
                     <CustomLink className='nav-items' onClick={logOut} to="/login">Log Out</CustomLink>
                     :
